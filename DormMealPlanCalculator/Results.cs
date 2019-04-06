@@ -15,11 +15,12 @@ namespace DormMealPlanCalculator
 
           public Results(int totalCost)
           {
-               this.totalCost = totalCost;
+               this.TotalCost = totalCost;
                InitializeComponent();
 
           }
-          public int totalCost { get; set; }
+
+          public int TotalCost { get; set; }
 
 
           private void Results_Load(object sender, EventArgs e)

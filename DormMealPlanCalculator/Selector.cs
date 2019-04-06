@@ -12,6 +12,11 @@ namespace DormMealPlanCalculator
 {
      public partial class Selector : Form
      {
+          // Arrays containing all values in order of appearance.
+          private int[] dormPrices = {1500, 1600, 1800, 2500};
+          private int[] mealPrices = {600, 1200, 1700};
+
+
           public Selector()
           {
                InitializeComponent();
