@@ -34,9 +34,11 @@
                this.UniversitySuites_selectionFour = new System.Windows.Forms.RadioButton();
                this.label1 = new System.Windows.Forms.Label();
                this.label2 = new System.Windows.Forms.Label();
-               this.radioButton6 = new System.Windows.Forms.RadioButton();
-               this.radioButton7 = new System.Windows.Forms.RadioButton();
-               this.radioButton8 = new System.Windows.Forms.RadioButton();
+               this.infiniteMeal_1700 = new System.Windows.Forms.RadioButton();
+               this.fourteenMeal_1200 = new System.Windows.Forms.RadioButton();
+               this.sevenMeal_600 = new System.Windows.Forms.RadioButton();
+               this.calculateTotalDescrip = new System.Windows.Forms.Label();
+               this.calculateTotal = new System.Windows.Forms.Button();
                this.SuspendLayout();
                // 
                // AllenHall_selectionOne
@@ -101,47 +103,67 @@
                this.label2.TabIndex = 9;
                this.label2.Text = "Please select your meal plan:";
                // 
-               // radioButton6
+               // infiniteMeal_1700
                // 
-               this.radioButton6.AutoSize = true;
-               this.radioButton6.Location = new System.Drawing.Point(376, 164);
-               this.radioButton6.Name = "radioButton6";
-               this.radioButton6.Size = new System.Drawing.Size(200, 17);
-               this.radioButton6.TabIndex = 12;
-               this.radioButton6.TabStop = true;
-               this.radioButton6.Text = "Unlimited meals: $1,700 per semester";
-               this.radioButton6.UseVisualStyleBackColor = true;
+               this.infiniteMeal_1700.AutoSize = true;
+               this.infiniteMeal_1700.Location = new System.Drawing.Point(376, 164);
+               this.infiniteMeal_1700.Name = "infiniteMeal_1700";
+               this.infiniteMeal_1700.Size = new System.Drawing.Size(200, 17);
+               this.infiniteMeal_1700.TabIndex = 12;
+               this.infiniteMeal_1700.TabStop = true;
+               this.infiniteMeal_1700.Text = "Unlimited meals: $1,700 per semester";
+               this.infiniteMeal_1700.UseVisualStyleBackColor = true;
                // 
-               // radioButton7
+               // fourteenMeal_1200
                // 
-               this.radioButton7.AutoSize = true;
-               this.radioButton7.Location = new System.Drawing.Point(376, 118);
-               this.radioButton7.Name = "radioButton7";
-               this.radioButton7.Size = new System.Drawing.Size(216, 17);
-               this.radioButton7.TabIndex = 11;
-               this.radioButton7.TabStop = true;
-               this.radioButton7.Text = "14 meals per week: $1,200 per semester";
-               this.radioButton7.UseVisualStyleBackColor = true;
+               this.fourteenMeal_1200.AutoSize = true;
+               this.fourteenMeal_1200.Location = new System.Drawing.Point(376, 118);
+               this.fourteenMeal_1200.Name = "fourteenMeal_1200";
+               this.fourteenMeal_1200.Size = new System.Drawing.Size(216, 17);
+               this.fourteenMeal_1200.TabIndex = 11;
+               this.fourteenMeal_1200.TabStop = true;
+               this.fourteenMeal_1200.Text = "14 meals per week: $1,200 per semester";
+               this.fourteenMeal_1200.UseVisualStyleBackColor = true;
                // 
-               // radioButton8
+               // sevenMeal_600
                // 
-               this.radioButton8.AutoSize = true;
-               this.radioButton8.Location = new System.Drawing.Point(376, 69);
-               this.radioButton8.Name = "radioButton8";
-               this.radioButton8.Size = new System.Drawing.Size(201, 17);
-               this.radioButton8.TabIndex = 10;
-               this.radioButton8.TabStop = true;
-               this.radioButton8.Text = "7 meals per week: $600 per semester";
-               this.radioButton8.UseVisualStyleBackColor = true;
+               this.sevenMeal_600.AutoSize = true;
+               this.sevenMeal_600.Location = new System.Drawing.Point(376, 69);
+               this.sevenMeal_600.Name = "sevenMeal_600";
+               this.sevenMeal_600.Size = new System.Drawing.Size(201, 17);
+               this.sevenMeal_600.TabIndex = 10;
+               this.sevenMeal_600.TabStop = true;
+               this.sevenMeal_600.Text = "7 meals per week: $600 per semester";
+               this.sevenMeal_600.UseVisualStyleBackColor = true;
+               // 
+               // calculateTotalDescrip
+               // 
+               this.calculateTotalDescrip.AutoSize = true;
+               this.calculateTotalDescrip.Location = new System.Drawing.Point(151, 283);
+               this.calculateTotalDescrip.Name = "calculateTotalDescrip";
+               this.calculateTotalDescrip.Size = new System.Drawing.Size(321, 13);
+               this.calculateTotalDescrip.TabIndex = 13;
+               this.calculateTotalDescrip.Text = "Once you are ready for the damage please press the button below.";
+               // 
+               // calculateTotal
+               // 
+               this.calculateTotal.Location = new System.Drawing.Point(216, 314);
+               this.calculateTotal.Name = "calculateTotal";
+               this.calculateTotal.Size = new System.Drawing.Size(162, 23);
+               this.calculateTotal.TabIndex = 14;
+               this.calculateTotal.Text = "Calculate Homelessness";
+               this.calculateTotal.UseVisualStyleBackColor = true;
                // 
                // Form1
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-               this.ClientSize = new System.Drawing.Size(847, 367);
-               this.Controls.Add(this.radioButton6);
-               this.Controls.Add(this.radioButton7);
-               this.Controls.Add(this.radioButton8);
+               this.ClientSize = new System.Drawing.Size(630, 392);
+               this.Controls.Add(this.calculateTotal);
+               this.Controls.Add(this.calculateTotalDescrip);
+               this.Controls.Add(this.infiniteMeal_1700);
+               this.Controls.Add(this.fourteenMeal_1200);
+               this.Controls.Add(this.sevenMeal_600);
                this.Controls.Add(this.label2);
                this.Controls.Add(this.label1);
                this.Controls.Add(this.UniversitySuites_selectionFour);
@@ -163,9 +185,11 @@
           private System.Windows.Forms.RadioButton UniversitySuites_selectionFour;
           private System.Windows.Forms.Label label1;
           private System.Windows.Forms.Label label2;
-          private System.Windows.Forms.RadioButton radioButton6;
-          private System.Windows.Forms.RadioButton radioButton7;
-          private System.Windows.Forms.RadioButton radioButton8;
+          private System.Windows.Forms.RadioButton infiniteMeal_1700;
+          private System.Windows.Forms.RadioButton fourteenMeal_1200;
+          private System.Windows.Forms.RadioButton sevenMeal_600;
+          private System.Windows.Forms.Label calculateTotalDescrip;
+          private System.Windows.Forms.Button calculateTotal;
      }
 }
 
