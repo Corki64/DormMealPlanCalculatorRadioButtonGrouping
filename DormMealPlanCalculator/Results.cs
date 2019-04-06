@@ -12,14 +12,24 @@ namespace DormMealPlanCalculator
 {
      public partial class Results : Form
      {
-          public Results()
+
+          public Results(int totalCost)
           {
+               this.totalCost = totalCost;
                InitializeComponent();
+
           }
+          public int totalCost { get; set; }
+
 
           private void Results_Load(object sender, EventArgs e)
           {
 
+          }
+
+          private void exitButton_Click(object sender, EventArgs e)
+          {
+               this.Close();
           }
      }
 }

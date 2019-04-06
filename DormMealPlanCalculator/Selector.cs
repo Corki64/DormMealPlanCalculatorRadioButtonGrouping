@@ -99,5 +99,15 @@ namespace DormMealPlanCalculator
           {
                AnyMealButton_CheckedChanged(sender, e);
           }
+
+          private void calculateTotal_Click(object sender, EventArgs e)
+          {
+
+               var totalCost = 0;
+
+               Results resultShow = new Results(totalCost);
+
+               resultShow.Show();
+          }
      }
 }
