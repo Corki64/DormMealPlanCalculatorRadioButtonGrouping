@@ -18,6 +18,8 @@ namespace DormMealPlanCalculator
                this.TotalCost = totalCost;
                InitializeComponent();
 
+               totalOutput.Text = totalCost.ToString("C");
+
           }
 
           public int TotalCost { get; set; }
@@ -31,6 +33,11 @@ namespace DormMealPlanCalculator
           private void exitButton_Click(object sender, EventArgs e)
           {
                this.Close();
+          }
+
+          private void totalOutput_Click(object sender, EventArgs e)
+          {
+
           }
      }
 }

@@ -28,19 +28,20 @@
           /// </summary>
           private void InitializeComponent()
           {
-               this.label1 = new System.Windows.Forms.Label();
+               this.totalOutput = new System.Windows.Forms.Label();
                this.totalCostDescrip = new System.Windows.Forms.Label();
                this.exitButton = new System.Windows.Forms.Button();
                this.SuspendLayout();
                // 
-               // label1
+               // totalOutput
                // 
-               this.label1.AutoSize = true;
-               this.label1.Location = new System.Drawing.Point(168, 43);
-               this.label1.Name = "label1";
-               this.label1.Size = new System.Drawing.Size(114, 13);
-               this.label1.TabIndex = 1;
-               this.label1.Text = "Total Cost will go here.";
+               this.totalOutput.AutoSize = true;
+               this.totalOutput.Location = new System.Drawing.Point(168, 43);
+               this.totalOutput.Name = "totalOutput";
+               this.totalOutput.Size = new System.Drawing.Size(114, 13);
+               this.totalOutput.TabIndex = 1;
+               this.totalOutput.Text = "Total Cost will go here.";
+               this.totalOutput.Click += new System.EventHandler(this.totalOutput_Click);
                // 
                // totalCostDescrip
                // 
@@ -68,7 +69,7 @@
                this.ClientSize = new System.Drawing.Size(299, 145);
                this.Controls.Add(this.exitButton);
                this.Controls.Add(this.totalCostDescrip);
-               this.Controls.Add(this.label1);
+               this.Controls.Add(this.totalOutput);
                this.Name = "Results";
                this.Text = "Total Meal and Dorm Cost";
                this.Load += new System.EventHandler(this.Results_Load);
@@ -78,7 +79,7 @@
           }
 
           #endregion
-          private System.Windows.Forms.Label label1;
+          private System.Windows.Forms.Label totalOutput;
           private System.Windows.Forms.Label totalCostDescrip;
           private System.Windows.Forms.Button exitButton;
      }

@@ -178,7 +178,6 @@
                this.dormPanel.Name = "dormPanel";
                this.dormPanel.Size = new System.Drawing.Size(230, 208);
                this.dormPanel.TabIndex = 16;
-               this.dormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dormPanel_Paint);
                // 
                // mealPanel
                // 
@@ -190,7 +189,6 @@
                this.mealPanel.Name = "mealPanel";
                this.mealPanel.Size = new System.Drawing.Size(236, 208);
                this.mealPanel.TabIndex = 17;
-               this.mealPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mealPanel_Paint);
                // 
                // Selector
                // 
