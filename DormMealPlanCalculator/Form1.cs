@@ -93,13 +93,11 @@ namespace DormMealPlanCalculator
           private void radioButton12_CheckedChanged(object sender, EventArgs e)
           {
                AnyMealButton_CheckedChanged(sender, e);
-
           }
 
           private void radioButton13_CheckedChanged(object sender, EventArgs e)
           {
                AnyMealButton_CheckedChanged(sender, e);
-
           }
      }
 }
