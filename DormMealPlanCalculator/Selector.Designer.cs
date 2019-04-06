@@ -1,6 +1,6 @@
 ﻿namespace DormMealPlanCalculator
 {
-     partial class Form1
+     partial class Selector
      {
           /// <summary>
           /// Required designer variable.

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DormMealPlanCalculator
 {
-     public partial class Form2 : Form
+     public partial class Results : Form
      {
-          public Form2()
+          public Results()
           {
                InitializeComponent();
+          }
+
+          private void Results_Load(object sender, EventArgs e)
+          {
+
           }
      }
 }
