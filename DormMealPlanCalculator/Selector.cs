@@ -7,7 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+ * This program is designed to use radio buttons to calculate total
+ * dorm and meal plan expenses for a user.
+ *
+ * This is the selection form.
+ *
+ * @author Luis Cortez (lac0084@auburn.edu)
+ * @version 0406191347
+ */
 namespace DormMealPlanCalculator
 {
      public partial class Selector : Form
@@ -101,6 +109,11 @@ namespace DormMealPlanCalculator
 
                Results resultShow = new Results(totalCost);
                resultShow.Show();
+          }
+
+          private void Selector_Load(object sender, EventArgs e)
+          {
+
           }
      }
 }

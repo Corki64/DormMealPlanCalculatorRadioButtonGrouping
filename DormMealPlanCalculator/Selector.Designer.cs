@@ -201,6 +201,7 @@
                this.Controls.Add(this.calculateTotalDescrip);
                this.Name = "Selector";
                this.Text = "Dorm and Meal Plan Selector";
+               this.Load += new System.EventHandler(this.Selector_Load);
                this.dormPanel.ResumeLayout(false);
                this.dormPanel.PerformLayout();
                this.mealPanel.ResumeLayout(false);
