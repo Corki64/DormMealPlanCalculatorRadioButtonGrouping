@@ -55,6 +55,7 @@
                this.AllenHall_selectionOne.TabStop = true;
                this.AllenHall_selectionOne.Text = "Allen Hall: $1,500 per semester";
                this.AllenHall_selectionOne.UseVisualStyleBackColor = true;
+               this.AllenHall_selectionOne.CheckedChanged += new System.EventHandler(this.AllenHall_selectionOne_CheckedChanged);
                // 
                // PikeHall_selectionTwo
                // 
@@ -66,6 +67,7 @@
                this.PikeHall_selectionTwo.TabStop = true;
                this.PikeHall_selectionTwo.Text = "Pike Hall: $1,600 per semester";
                this.PikeHall_selectionTwo.UseVisualStyleBackColor = true;
+               this.PikeHall_selectionTwo.CheckedChanged += new System.EventHandler(this.PikeHall_selectionTwo_CheckedChanged);
                // 
                // FarthingHall_selectionThree
                // 
@@ -77,6 +79,7 @@
                this.FarthingHall_selectionThree.TabStop = true;
                this.FarthingHall_selectionThree.Text = "Farthing Hall: $1,800 per semester";
                this.FarthingHall_selectionThree.UseVisualStyleBackColor = true;
+               this.FarthingHall_selectionThree.CheckedChanged += new System.EventHandler(this.FarthingHall_selectionThree_CheckedChanged);
                // 
                // UniversitySuites_selectionFour
                // 
@@ -88,6 +91,7 @@
                this.UniversitySuites_selectionFour.TabStop = true;
                this.UniversitySuites_selectionFour.Text = "University Suites: $2,500 per semester";
                this.UniversitySuites_selectionFour.UseVisualStyleBackColor = true;
+               this.UniversitySuites_selectionFour.CheckedChanged += new System.EventHandler(this.UniversitySuites_selectionFour_CheckedChanged);
                // 
                // label1
                // 
@@ -106,6 +110,7 @@
                this.calculateTotalDescrip.Size = new System.Drawing.Size(321, 13);
                this.calculateTotalDescrip.TabIndex = 13;
                this.calculateTotalDescrip.Text = "Once you are ready for the damage please press the button below.";
+               this.calculateTotalDescrip.Click += new System.EventHandler(this.calculateTotalDescrip_Click);
                // 
                // calculateTotal
                // 
@@ -126,6 +131,7 @@
                this.radioButton11.TabStop = true;
                this.radioButton11.Text = "7 meals per week: $600 per semester";
                this.radioButton11.UseVisualStyleBackColor = true;
+               this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
                // 
                // label6
                // 
@@ -146,6 +152,7 @@
                this.radioButton12.TabStop = true;
                this.radioButton12.Text = "14 meals per week: $1,200 per semester";
                this.radioButton12.UseVisualStyleBackColor = true;
+               this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
                // 
                // radioButton13
                // 
@@ -157,6 +164,7 @@
                this.radioButton13.TabStop = true;
                this.radioButton13.Text = "Unlimited meals: $1,700 per semester";
                this.radioButton13.UseVisualStyleBackColor = true;
+               this.radioButton13.CheckedChanged += new System.EventHandler(this.radioButton13_CheckedChanged);
                // 
                // dormPanel
                // 
@@ -169,6 +177,7 @@
                this.dormPanel.Name = "dormPanel";
                this.dormPanel.Size = new System.Drawing.Size(230, 208);
                this.dormPanel.TabIndex = 16;
+               this.dormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dormPanel_Paint);
                // 
                // mealPanel
                // 
@@ -180,6 +189,7 @@
                this.mealPanel.Name = "mealPanel";
                this.mealPanel.Size = new System.Drawing.Size(236, 208);
                this.mealPanel.TabIndex = 17;
+               this.mealPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mealPanel_Paint);
                // 
                // Form1
                // 
